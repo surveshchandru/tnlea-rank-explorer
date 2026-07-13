@@ -131,7 +131,9 @@ export default function RankingsTable({ data }: RankingsTableProps) {
                       {row.admissionYear}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 flex justify-center">
-                      <Verified size={18} className="text-blue-500" title="Google Verified Submission" />
+                      <span title="Google Verified Submission">
+                        <Verified size={18} className="text-blue-500" />
+                      </span>
                     </td>
                   </tr>
                 ))
