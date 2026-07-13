@@ -19,7 +19,7 @@ export default function SubmitForm({ initialData, onSubmit }: SubmitFormProps) {
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
 
-  // Update state when initialData loads (e.g. from Firebase)
+  // Populate form when existing submission data is loaded
   useEffect(() => {
     if (initialData) {
       setAdmissionYear(initialData.admissionYear || 2026);
